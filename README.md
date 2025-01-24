@@ -21,3 +21,18 @@ A Python-based tool for mapping and inspecting HPGe detectors in the LEGEND200 e
    ```bash
    git clone git@github.com:mababicz/legend200-detector-mapper.git
    cd legend200-detector-mapper
+
+## IMPORTANT (it is going to work only if you are LEGEND collaborator): Setting Up SSH for Git and Jupyter Integration
+
+To use the tool and access LEGEND metadata (via SSH) on NERSC or similar systems, you need to set up an SSH agent. Follow these steps to set up SSH and use it in Jupyter:
+
+### **1. Generate and Add an SSH Key**
+If you don’t already have an SSH key configured, follow the official GitHub instructions: [Generate a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+
+### **2. Configure Git**
+Run the following commands to configure Git and start the SSH agent:
+```bash
+git config --global user.name "xxxxx"
+git config --global user.email "xxx@yyy"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519

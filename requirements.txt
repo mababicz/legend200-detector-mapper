@@ -1,0 +1,8 @@
+awkward
+matplotlib
+legendmeta
+lgdo
+h5py
+pandas
+ipywidgets
+

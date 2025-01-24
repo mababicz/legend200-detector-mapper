@@ -10,7 +10,7 @@ GLOBAL_PARAM = {
         'PSP_SUBDIR': 'ref-v2.0.0/generated/tier/psp/',  # DCR param -> Not yet used
         'PAR_SUBDIR': 'ref-v2.0.0/generated/par/pht/',  # Ecal parameters
         'PERIODS': ['p03/', 'p08/', 'p09/', 'p10/'],
-        'output_dir': '/global/cfs/projectdirs/m2676/users/yuvand/DataPreparation/Data2/',
+        'output_dir': '/pscratch/sd/m/mababicz/DATA/'
     },
     'peaks': {
         'DEP_Tl': 1592.53,
